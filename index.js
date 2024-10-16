@@ -8,7 +8,7 @@ const cors = require("cors");
 // const products = require("./src/models/products");
 // const promos = require("./src/models/promo");
 // const Users = require("./src/models/users");
-const transactions = require("./src/models/transactions");
+// const transactions = require("./src/models/transactions");
 
 dotenv.config();
 
@@ -63,14 +63,14 @@ app.use(express.static(__dirname));
 //     console.log(err);
 //   });
 
-transactions
-  .sync()
-  .then(() => {
-    console.log(`transaction i synchorize`);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// transactions
+//   .sync()
+//   .then(() => {
+//     console.log(`transaction i synchorize`);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 app.get("/", (req, res) => {
   res.status(200).send("Welcome to my simple API");
