@@ -76,12 +76,12 @@ app.get("/", (req, res) => {
   res.status(200).send("Welcome to my simple API");
 });
 
-app.get("/ping", (req, res) => {
-  res.json({ msg: "PONG" });
-});
-
 app.listen(port, () => {
   console.log(`APP is running on PORT ${port}`);
 });
+
+const data = () => {
+  data;
+};
 
 //mvc => moduls,views,controllers,models =>merepresentasikan struktur data yang ada didalam database kita.controllers => logika yang kita buat di dalam API kita.
