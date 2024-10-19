@@ -20,6 +20,7 @@ app.use(
   cors({
     origin: ["http://localhost:3000", "https://frontend-coffee-lpg.vercel.app"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    allowedHeaders: ["Content-Type"],
   })
 );
 
