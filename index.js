@@ -18,11 +18,8 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "*",
-      "https://frontend-coffee-lpg.vercel.app",
-    ],
+    origin: ["http://localhost:3000", "https://frontend-coffee-lpg.vercel.app"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   })
 );
 
